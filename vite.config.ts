@@ -3,10 +3,8 @@ import react from '@vitejs/plugin-react';
 
 export default defineConfig({
   plugins: [react()],
-  // GitHub Pages is served from /Sanket-Portfolio/
-  // so all built asset URLs must be generated with this base.
-  // For local development, we use base: '/'
-  base: '/Sanket-Portfolio/',
+  // Use relative asset paths in production so the app works on Netlify and other static hosts.
+  base: './',
   server: {
     port: 4173,
     proxy: {
