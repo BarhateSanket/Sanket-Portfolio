@@ -5,7 +5,8 @@ export default defineConfig({
   plugins: [react()],
   // GitHub Pages is served from /Sanket-Portfolio/
   // so all built asset URLs must be generated with this base.
-  base: '/Sanket-Portfolio/',
+  // For local development, we use base: '/'
+  base: '/',
   server: {
     port: 4173,
     proxy: {
