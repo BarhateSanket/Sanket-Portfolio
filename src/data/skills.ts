@@ -1,0 +1,68 @@
+import type { SkillGroup } from '../types';
+
+export const skillGroups: SkillGroup[] = [
+  {
+    category: 'Product Skills',
+    year: '2 yrs',
+    skills: [
+      { name: 'Product Thinking', level: 80 },
+      { name: 'Product Lifecycle Management', level: 78 },
+      { name: 'User Stories', level: 79 },
+      { name: 'User Research', level: 78 },
+      { name: 'Agile Methodology', level: 79 },
+      { name: 'Feature Prioritization', level: 77 },
+      { name: 'Product Strategy', level: 78 },
+      { name: 'Product Roadmap', level: 76 },
+      { name: 'MVP Definition', level: 77 },
+      { name: 'Product Metrics', level: 75 },
+      { name: 'Scrum', level: 76 },
+      { name: 'Competitive Analysis', level: 76 },
+    ],
+  },
+  {
+    category: 'Technical Skills',
+    year: '3 yrs',
+    skills: [
+      { name: 'Python', level: 80 },
+      { name: 'JavaScript', level: 79 },
+      { name: 'React.js', level: 81 },
+      { name: 'HTML', level: 78 },
+      { name: 'CSS', level: 78 },
+      { name: 'MongoDB', level: 78 },
+      { name: 'REST APIs', level: 79 },
+      { name: 'SQL', level: 77 },
+      { name: 'Machine Learning', level: 72 },
+      { name: 'Sentiment Analysis', level: 72 },
+      { name: 'AI Prompt Engineering', level: 72 },
+    ],
+  },
+  {
+    category: 'Tools & Platforms',
+    year: '3 yrs',
+    skills: [
+      { name: 'Git', level: 80 },
+      { name: 'GitHub', level: 80 },
+      { name: 'Visual Studio Code', level: 82 },
+      { name: 'Figma', level: 78 },
+      { name: 'Notion', level: 79 },
+      { name: 'Canva', level: 75 },
+      { name: 'Jira', level: 79 },
+      { name: 'Trello', level: 75 },
+      { name: 'Google Sheets', level: 77 },
+      { name: 'Microsoft Excel', level: 77 },
+    ],
+  },
+  {
+    category: 'AI & Analytics',
+    year: '1 yr',
+    skills: [
+      { name: 'Predictive Analytics', level: 78 },
+      { name: 'Data Processing', level: 77 },
+      { name: 'LLMs', level: 80 },
+      { name: 'Data Analysis', level: 79 },
+      { name: 'KPI Tracking', level: 76 },
+      { name: 'NLP', level: 74 },
+      { name: 'Generative AI', level: 75 },
+    ],
+  },
+];

@@ -1,0 +1,207 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  color-scheme: dark;
+  font-family: Inter, system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+  --bg: #050d1a;
+  --surface: rgba(7, 13, 26, 0.72);
+  --surface-strong: rgba(7, 13, 26, 0.9);
+  --text: #ffffff;
+  --muted: #94a3b8;
+  --border: rgba(255, 255, 255, 0.12);
+  --shadow: 0 24px 80px rgba(3, 24, 52, 0.45);
+  --selection-bg: rgba(6, 182, 212, 0.4);
+  --selection-text: #ffffff;
+  --header-bg: rgba(5, 13, 26, 0.9);
+}
+
+.light {
+  color-scheme: light;
+  --bg: #f8fafc;
+  --surface: rgba(255, 255, 255, 0.92);
+  --surface-strong: rgba(255, 255, 255, 0.97);
+  --text: #0f172a;
+  --muted: #475569;
+  --border: rgba(15, 23, 42, 0.12);
+  --shadow: 0 24px 80px rgba(15, 23, 42, 0.08);
+  --selection-bg: rgba(6, 182, 212, 0.2);
+  --selection-text: #0f172a;
+  --header-bg: rgba(248, 250, 252, 0.95);
+}
+
+html {
+  scroll-behavior: smooth;
+  line-height: 1.5;
+}
+
+body {
+  margin: 0;
+  min-height: 100vh;
+  text-rendering: optimizeLegibility;
+  font-family: inherit;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-feature-settings: "ss01";
+
+  background: var(--bg);
+  color: var(--text);
+}
+
+html.light body {
+  background: var(--bg);
+  color: var(--text);
+}
+
+.glass-card {
+  background: var(--surface);
+  backdrop-filter: blur(20px);
+  border: 1px solid var(--border);
+  box-shadow: var(--shadow);
+}
+
+html.light .glass-card {
+  background: var(--surface);
+  border-color: var(--border);
+}
+
+html.light .bg-night\/90 {
+  background-color: rgba(248, 250, 252, 0.9) !important;
+}
+
+html.light .bg-night\/95 {
+  background-color: rgba(248, 250, 252, 0.95) !important;
+}
+
+html.light .bg-night\/80 {
+  background-color: rgba(248, 250, 252, 0.8) !important;
+}
+
+html.light .bg-night\/70 {
+  background-color: rgba(248, 250, 252, 0.7) !important;
+}
+
+html.light .bg-slate-950\/70,
+html.light .bg-slate-950\/80 {
+  background-color: rgba(248, 250, 252, 0.7) !important;
+}
+
+html.light .bg-white\/5 {
+  background-color: rgba(255, 255, 255, 0.85) !important;
+}
+
+html.light .bg-white\/10 {
+  background-color: rgba(255, 255, 255, 0.9) !important;
+}
+
+html.light .text-white {
+  color: #0f172a !important;
+}
+
+html.light .text-slate-300,
+html.light .text-slate-200,
+html.light .text-slate-100 {
+  color: #475569 !important;
+}
+
+html.light .border-white\/10,
+html.light .border-white\/5 {
+  border-color: rgba(15, 23, 42, 0.12) !important;
+}
+
+html.light .bg-grid-white\/\[0\.02\] {
+  background-color: rgba(15, 23, 42, 0.02) !important;
+}
+
+html.light .hover\:bg-night\/60:hover {
+  background-color: rgba(248, 250, 252, 0.6) !important;
+}
+
+
+* {
+  box-sizing: border-box;
+}
+
+button,
+input,
+textarea,
+select {
+  font: inherit;
+}
+
+::selection {
+  background: rgba(6, 182, 212, 0.28);
+  color: #fff;
+}
+
+.glass-card {
+  background: rgba(7, 13, 26, 0.72);
+  backdrop-filter: blur(20px);
+  border: 1px solid rgba(96, 165, 250, 0.12);
+  box-shadow: 0 24px 80px rgba(3, 24, 52, 0.45);
+}
+
+.shadow-glow {
+  box-shadow: 0 30px 90px rgba(6, 182, 212, 0.18);
+}
+
+.shadow-cyan\/30 {
+  box-shadow: 0 0 30px rgba(6, 182, 212, 0.3);
+}
+
+.shadow-cyan\/50 {
+  box-shadow: 0 0 50px rgba(6, 182, 212, 0.5);
+}
+
+.interactive {
+  transition: transform 0.2s ease, filter 0.2s ease, box-shadow 0.2s ease;
+}
+
+.interactive:hover {
+  transform: translateY(-1px);
+  filter: brightness(1.05);
+}
+
+.text-glow {
+  text-shadow: 0 0 18px rgba(59, 130, 246, 0.4);
+}
+
+.scroll-indicator {
+  animation: floatUp 2.4s infinite ease-in-out;
+}
+
+@keyframes floatUp {
+  0%,
+  100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-10px);
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+  }
+}
+
+/* Hide react-pdf text layer */
+.react-pdf__Page__textContent,
+.react-pdf__Page__textContent *,
+.react-pdf__Page__annotations {
+  display: none !important;
+}
+
+/* Line clamp utility */
+.line-clamp-3 {
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
