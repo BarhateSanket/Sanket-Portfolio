@@ -6,7 +6,7 @@ export default defineConfig({
   // GitHub Pages is served from /Sanket-Portfolio/
   // so all built asset URLs must be generated with this base.
   // For local development, we use base: '/'
-  base: '/',
+  base: '/Sanket-Portfolio/',
   server: {
     port: 4173,
     proxy: {
