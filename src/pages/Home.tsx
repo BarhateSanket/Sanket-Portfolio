@@ -104,7 +104,7 @@ function Home() {
             </div>
             <div className="relative space-y-4 text-slate-100">
               <p className="text-sm uppercase tracking-[0.3em] text-cyan/70">Portrait + personal brand</p>
-              <h2 className="text-3xl font-semibold text-white">A confident, recruiter-ready hero image.</h2>
+              <h2 className="text-3xl font-semibold text-white">Designing, building, and shipping solutions that solve real problems.</h2>
               <p className="text-slate-300">
                 Engineering student crafting AI-powered experiences with product-first thinking.
               </p>
