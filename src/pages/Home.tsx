@@ -97,7 +97,7 @@ function Home() {
             <div className="relative overflow-hidden rounded-[2.25rem] bg-black/10 shadow-inner shadow-cyan/10">
               <div className="absolute inset-0 bg-gradient-to-br from-cyan/15 via-transparent to-purple-500/20" />
               <img
-                src="/profile.jpg"
+                src="/profile.jpeg"
                 alt="Sanket Barhate portrait"
                 className="h-auto w-full object-contain"
               />
